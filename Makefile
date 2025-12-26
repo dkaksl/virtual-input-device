@@ -1,3 +1,3 @@
 build:
 	# gcc -o run hello.c
-	gcc -o vdev uinput-device.c -ludev
+	gcc -o out/vdev uinput-device.c -ludev
