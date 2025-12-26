@@ -7,25 +7,6 @@
 #include <stdlib.h>
 #include "udev.h"
 
-int print_devices_by_reading_proc()
-{
-    FILE *fptr = fopen("/proc/bus/input/devices", "r");
-
-    if (fptr == NULL)
-    {
-        return 1;
-    }
-
-    char ch;
-    while ((ch = fgetc(fptr)) != EOF)
-    {
-        putchar(ch);
-    }
-
-    fclose(fptr);
-    return 0;
-}
-
 void emit(int fd, int type, int code, int val)
 {
     struct input_event ie;
