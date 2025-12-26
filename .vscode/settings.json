@@ -1,0 +1,6 @@
+{
+  "makefile.configureOnOpen": false,
+  "[c]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
